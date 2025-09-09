@@ -118,7 +118,7 @@ img{display: block;margin: 0 auto;max-width: 100%;}
 }
 
 #s1,#s2,#s3,#s4,#s5,#s6,#s7{
-	background: url(../images/mainBg.png) no-repeat top center/100% 100%;
+	background: url(../images/mainBg.jpg) no-repeat top center/100% 100%;
 }
 
 
@@ -132,7 +132,7 @@ img{display: block;margin: 0 auto;max-width: 100%;}
 	padding: 0.43rem 0.48rem 0;
 }
 #s0 .top .logo{
-	width: 2.21rem;
+	width: 1.21rem;
 	margin: 0;
 }
 #s0 .slogan img{
@@ -141,7 +141,7 @@ img{display: block;margin: 0 auto;max-width: 100%;}
 }
 #s0 .enter1 img{
 	width: 2.86rem;
-	margin: 1.4rem auto 0;
+	margin:9.4rem auto 0;
 }
 /* ----------------
 	引导页s0结束
