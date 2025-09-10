@@ -13,21 +13,13 @@ body {
   height: 100%;
 }
 .swiper-slide {
-  /* overflow: auto;
-  -webkit-overflow-scrolling: touch; */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .page-L {
   width: 100%;
   height: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.page-L .info {
-  flex: 1;
-  min-height: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .page-L::-webkit-scrollbar {
   display: none;
@@ -44,10 +36,6 @@ img {
   padding-top: 0.01rem;
   padding-bottom: 0;
   /*此处 padding-bottom 大小要和底部footer等高*/
-  flex: 1;
-  min-height: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 .main .top {
 }
@@ -73,8 +61,10 @@ img {
 .info .txt {
   line-height: 0.4rem;
   font-size: 0.22rem;
-  height: 100%;
+  height: 12rem;
   color: #264764;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .txt video {
   width: 100%;
@@ -84,10 +74,10 @@ img {
 }
 
 .nav {
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 0.97rem;
+  height: 1.26rem;
   display: flex;
   justify-content: space-evenly;
   background-color: #083e89;
@@ -106,19 +96,14 @@ img {
   font-weight: bold;
   background-color: #1990d4;
 }
-.specilSlice .footer {
-  position: absolute;
-  bottom: 0;
-}
 /*尾部*/
 .footer {
   width: 100%;
   text-align: center;
   color: #fff;
   font-size: 0.15rem;
-  background: #083e89;
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
 }
 .footer img {
   display: inline-block;
@@ -177,8 +162,7 @@ img {
   margin: -0.25rem 0.42rem 0;
 }
 #s1 .info .txt {
-  /* height: 10.5rem; */
-  height: 100%;
+  height: 10.5rem;
   font-size: 0.24rem;
   padding-bottom: 0.3rem;
 }
