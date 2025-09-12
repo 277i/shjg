@@ -30,6 +30,21 @@
 </head>
 
 <style>
+    /* lb */
+    .lbbox{
+        width: 750px;
+        margin: 0 auto 60px;
+        overflow: hidden;
+    }
+    /* 外层容器 */
+    .swiper {
+        width: 750px;
+        height: 380px;
+    }
+    /* 轮播项 */
+    .swiper .swiper-slide {
+        height: 100%;
+    }
     .lunbo1 {
         height: 445px;
     }
@@ -152,13 +167,13 @@
                     <video src="https://ideal.chinaceotv.com/2022/0917ycj/jgjt.mp4" class="video" controls></video>
                 </div>
             </div> -->
-            <div class="titbg">
+            <!-- <div class="titbg">
                 <em>企业历史</em>
             </div>
 
             <div class="png">
                 <img src="./img/p1.png" alt="">
-            </div>
+            </div> -->
 
             <div class="titbg">
                 <em>企业实力</em>
@@ -175,15 +190,48 @@
             <div class="png">
                 <img src="./img/p1-3.png" alt="">
             </div>
-
+             <div class="titbg" style="background: none;margin: 0 auto 30px">
+                <em>六大新兴业务</em>
+            </div>
+            <div class="lbbox">
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/lb/1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/lb/2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="img/lb/3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                          <img src="img/lb/4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                         <img src="img/lb/5.png" />
+                    </div>
+                    </div>
+                </div>
+              </div>
+            <div class="titbg" style="background: none;margin: 0 auto 30px">
+                <em>建筑机器人方阵</em>
+            </div>
+            <div class="png">
+                <img src="./img/p1-7.png" alt="">
+            </div>
             <div class="titbg">
                 <em>市场布局</em>
             </div>
-
             <div class="png">
                 <img src="./img/p1-4.png" alt="">
             </div>
-
+             <div class="titbg">
+                <em>科技赋能</em>
+            </div>
+            <div class="png">
+                <img src="./img/p1-8.png" alt="">
+            </div>
             <div class="titbg">
                 <em>职等你来</em>
             </div>
@@ -218,22 +266,14 @@
 <script src="./js/jquery-1.12.3.min.js"></script>
 <script src="./js/swiper.js"></script>
 <script>
-    var swiper1 = new Swiper('.swiper1', {
-        slidesPerView: 5,
+    var swiper1 = new Swiper('.swiper2', {
+        slidesPerView: 1,
         spaceBetween: 30,
         centeredSlides: true,
         loop: true,
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable: true,
-        // },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+        autoplay: {
+            disableOnInteraction: false, // 鼠标滑动后继续自动播放
         },
-        // controller: {
-        //     control: swiper2,
-        // }
     });
     // var swiper2 = new Swiper('.swiper2', {
     //     loop: true,
