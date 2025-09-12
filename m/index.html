@@ -44,7 +44,7 @@
           rem: { bline: "bx", rval: 750 },
         });
       } else {
-        // window.location.href = "../index.html";
+        window.location.href = "../index.html";
       }
       var loader51 = new IENV.Loader({ auto: true });
     </script>
@@ -1382,7 +1382,11 @@
     <script src="js/rmjob.js"></script>
     <script>
 
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+            disableOnInteraction: false, // 鼠标滑动后继续自动播放
+        },
+    });
       var elevideo = $("video");
 
       $(".jg").click(function () {
