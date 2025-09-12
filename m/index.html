@@ -44,7 +44,7 @@
           rem: { bline: "bx", rval: 750 },
         });
       } else {
-        window.location.href = "../index.html";
+        // window.location.href = "../index.html";
       }
       var loader51 = new IENV.Loader({ auto: true });
     </script>
@@ -89,7 +89,14 @@
           >
             <img src="images/enter.png" />
           </div>
-          <div class="footer">
+          <div
+            class="footer"
+            style="
+              background: transparent;
+              color: #cccccc;
+              margin-bottom: 0.1rem;
+            "
+          >
             无忧工作网版权所有©<span
               >1999 -
               <script>
@@ -107,30 +114,65 @@
             <div class="info">
               <div class="txt">
                 <!-- <video src="https://ideal.chinaceotv.com/2022/0917ycj/jgjt.mp4" controls></video> -->
-                <div class="tit"><img src="images/s1-title1.png" /></div>
-                <img src="images/s1-1.png" style="width: 6.64rem" />
+                <!-- <div class="tit"><img src="images/s1-title1.png" /></div>
+                <img src="images/s1-1.png" style="width: 6.64rem" /> -->
                 <div class="tit"><img src="images/s1-title2.png" /></div>
                 <img src="images/s1-2.png" style="width: 6.12rem" />
-                <img src="images/s1-7.png" style="width: 6.12rem" />
+                <!-- <img src="images/s1-7.png" style="width: 6.12rem" /> -->
                 <div class="tit"><img src="images/s1-title3.png" /></div>
                 <img src="images/s1-3.png" style="width: 6.15rem" />
                 <br />
                 <p class="te">
-                  五大事业群，全产业链协同联动，为客户提供高效的建筑<br />
+                  五大事业群，全产业链协同联动，为客户提供高效的建筑
                   全生命周期服务整体解决方案。
                 </p>
                 <br />
-                <img src="images/s1-4.png" />
-                <br />
-                <p class="te">
+                <div class="tit" style="width: 2.6rem;"><img src="images/bt1.png" /></div>
+                <div class="gsjj_lb">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="images/lb/1.png"></img>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/lb/2.png"></img>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/lb/3.png"></img>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/lb/4.png"></img>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/lb/5.png"></img>
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="images/lb/6.png"></img>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="tit" style="width: 3rem;"><img src="images/bt2.png" /></div>
+                <img src="images/t1.png" style="width: 6.17rem" />
+                
+                <!-- <img src="images/s1-4.png" />
+                <br /> -->
+                <!-- <p class="te">
                   全产业链绿色发展再添新引擎，积极践行“绿水青山就是<br />
                   金山银山”理念，助力建设“美丽中国”。
-                </p>
+                </p> -->
                 <div class="tit"><img src="images/s1-title4.png" /></div>
                 <img src="images/s1-5.png" style="width: 6.17rem" />
+                <div class="tit"><img src="images/s1-title7.png" /></div>
+                <img src="images/kjfn.png" style="width: 6.17rem" />
                 <div class="tit"><img src="images/s1-title5.png" /></div>
                 <img src="images/s1-6.png" style="width: 6.17rem" />
+                <div class="tit"><img src="images/s1-title8.png" /></div>
                 <img src="images/s1-8.png" style="width: 6.12rem" />
+                <br /> 
+                <br /> 
+                <br /> 
               </div>
             </div>
             <ul class="nav">
@@ -1339,6 +1381,8 @@
     <script src="js/data.js"></script>
     <script src="js/rmjob.js"></script>
     <script>
+
+    var swiper = new Swiper(".mySwiper", {});
       var elevideo = $("video");
 
       $(".jg").click(function () {
@@ -1366,6 +1410,8 @@
         imgUrl: "images/share.png", //图片路径
         debug: false,
       });
+
+
     </script>
   </body>
 </html>
